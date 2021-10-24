@@ -1,0 +1,200 @@
+/* navbar */
+
+#logo {
+  width: 120px;
+  margin-right: 5rem;
+  margin-left: 2rem;
+}
+
+.navitem {
+  font-size: 2rem;
+  margin: 0px 1rem;
+  color: white;
+}
+
+#navbar a:hover {
+  color: rgb(255, 72, 0);
+}
+
+#navbar .HOME:active {
+  color: rgb(255, 72, 0);
+}
+
+#navbar::before {
+  background: url("../images/navbg.png") no-repeat center fixed;
+  background-size: cover;
+  content: "";
+  object-fit: contain;
+  position: absolute;
+  width: 100%;
+  height: 115%;
+  z-index: -2;
+  opacity: 0.9;
+}
+
+#welcometext {
+  font-family: "Birthstone", cursive;
+  font-size: 100px !important;
+  padding-top: 100px;
+  color: #000;
+  /* padding-right: 10px; */
+}
+
+#welcometext h1 {
+  margin: 50px;
+}
+
+
+#welcometext::before {
+  background-color: white;
+  content: "";
+  position: absolute;
+  width: 33%;
+  height: 50%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+@media screen and (max-width:974px) {
+  #welcometext::before {
+    width: 293px;
+  }
+}
+
+
+/* Indian traditional flavours */
+
+.itf {
+  margin-top: 100px;
+  width: fit-content;
+}
+
+.itf-heading {
+  margin-top: 100px;
+  font-size: 40px;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+.itf-p {
+  margin-top: 20px;
+  font-family: "Ephesis", cursive;
+  font-family: "Gemunu Libre", sans-serif;
+  font-family: "Inconsolata", monospace;
+}
+
+.itf img{
+  width: fit-content !important; 
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width:992px) {
+  .itf img{
+    display: none;
+  }
+}
+
+/* new taste */
+
+.tastes{
+  padding-bottom: 4rem;
+  background-color: #d4d8d9;
+}
+.teste-content{
+  margin-top: 4rem;
+  padding: 0rem 2rem;
+}
+.teste-content h1{
+  margin-bottom: 1.5rem;
+}
+
+/* india on your plate */
+
+.OYP{
+  color: rgb(236, 78, 16);
+  margin-bottom: 2rem;
+}
+
+.india{
+  font-family: "Birthstone", cursive;
+  color: #c0203f;
+  font-size: 5rem;
+  font-weight: bolder;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.ioyp-bg::before{
+  background: url("../images/contentbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 140%;
+  z-index: -2;
+  opacity: 1;
+}
+
+.second-bg::before{
+  background-color: white;
+  content: "";
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 120%;
+  z-index: -1;
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 5rem  0rem ;
+}
+
+.ioyp-content{
+  opacity: 1;
+  padding: 5rem 9.6rem;
+}
+.ioyp-content img{
+  width: 178px;
+}
+
+.con-text{
+  height: 200px;
+}
+
+/* traditional cuisine made easy */
+
+.tcme{
+  padding: 3rem;
+  background-color: #d4d8d9;
+  height: 50%;
+}
+
+.tcme-ele{
+  margin: 2rem;
+}
+.tcme-flower{
+  margin: 2rem;
+}
+.tcme-text{
+  margin-top: 2rem;
+}
+
+/* bookbg */
+
+.bookbg{
+  width: 100%;
+}
+
+/* book here */
+
+.book{
+  background-color: #2a3c40;
+}
+.book h1{
+  font-family: "Birthstone", cursive;
+  font-size: 6rem;
+}
+.form-select{
+  width: 83%!important;
+  border-radius: 0.60rem !important;
+}
