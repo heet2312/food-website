@@ -198,3 +198,33 @@
   width: 83%!important;
   border-radius: 0.60rem !important;
 }
+
+.book .book-item{
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 0.60rem;
+  width: 83%;
+  margin-bottom: 2rem;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* quote */
+.quote{
+  padding: 2rem 0rem;
+}
+.quote-text{
+  margin-top: 1rem;
+}
+.author{
+  margin-bottom: 1.5rem;
+}
+.Social a{
+  text-decoration: none;
+}
+.Social-logo{
+  margin: 0rem 1rem ;
+  color: white;
+}

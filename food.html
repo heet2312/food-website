@@ -35,6 +35,8 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/food.css">
+
+
 </head>
 
 <body>
@@ -213,10 +215,10 @@
     <div class="book text-white">
         <h1 class="text-center"> Book here</h1>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-evenly">
                 <div class="col-3">
                     <h6>How many People?</h6>
-                    <select class="form-select form-select-sm bg-dark text-white hmp"
+                    <select class="form-select form-select-sm bg-dark text-white hmp book-item"
                         aria-label=".form-select-sm example">
                         <option selected>2 People</option>
                         <option value="1">3 People</option>
@@ -224,36 +226,68 @@
                     </select>
                 </div>
                 <div class="col-3">
-                    <!-- <h6>When is your booking</h6>
-                    <div class="form-group bg-dark">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="bi bi-calendar-week-fill h6"></i></span>
-                            </div>
-                            <input class="form-control datepicker bg-dark text-white" placeholder="Select date" type="text"
-                                value="06/20/2020">
-                        </div>
-                    </div> -->
+                    <h6>When is your booking</h6>
+                    <div class="form-group">
+                        <input type="date" class="book-item bg-dark text-white" id="start" name="trip-start"
+                            value="2018-07-22">
+                    </div>
                 </div>
-                <div class="col-3"></div>
-
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-3"></div>
-                    <div class="col-3"></div>
+                <div class="col-3">
+                    <h6>Time</h6>
+                    <input type="time" class="book-item bg-dark text-white" id="appt" name="appt" min="09:00"
+                        max="18:00" value="09:00" required>
                 </div>
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-3"></div>
-                    <div class="col-3"></div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-3">
+                    <h6>Name</h6>
+                    <input class="form-control form-control-sm book-item bg-dark text-white" type="text"
+                        placeholder="firstname middlename surname" aria-label=".form-control-sm example">
+                </div>
+                <div class="col-3">
+                    <h6>Email</h6>
+                    <input class="form-control form-control-sm book-item bg-dark text-white" type="text"
+                        placeholder="Your email address" aria-label=".form-control-sm example">
+                </div>
+                <div class="col-3">
+                    <h6>Phone</h6>
+                    <input class="form-control form-control-sm book-item bg-dark text-white" type="text"
+                        placeholder="Phone Number" aria-label=".form-control-sm example">
+                </div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-3">
+                    <button type="button" class="btn btn-outline-light book-item ">Submit</button>
                 </div>
             </div>
         </div>
 
-        <!-- bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-            crossorigin="anonymous"></script>
+        <!-- background-img -->
+        <img src="./images/discoverbg.png" class="bookbg img-fluid" alt="">
+
+        <!-- quote -->
+        <div class="quote text-center">
+            <h3><i class="bi bi-chat-right-quote-fill text-white"></i></h3>
+            <p class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet recusandae dolores <br> repellat
+                facilis obcaecati corrupti quae debitis cupiditate perferendis, cumque ut quia distinctio quasi.
+            </p>
+            <h5 class="author">Heet Senghani</h5>
+            <div class="Social text-white">
+                <h4>
+                    <a href=""><i class="bi bi-twitter Social-logo"></i></a>
+                    <a href=""><i class="bi bi-facebook Social-logo"></i></a>
+                    <a href=""><i class="bi bi-instagram Social-logo"></i></a>
+                    <a href=""><i class="bi bi-google Social-logo"></i></a>
+                    <a href=""><i class="bi bi-telephone-fill Social-logo"></i></a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
